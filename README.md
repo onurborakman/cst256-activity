@@ -1,2 +1,1 @@
-# cst256-activity
-Onur Akman - CST256 Activities
+# Onur Akman CST-256 Activities
