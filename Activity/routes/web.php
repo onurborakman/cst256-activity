@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 /*Route::post('/whoami', 'WhatsMyNameController@index');
@@ -38,3 +38,9 @@ Route::get('/order', function(){
 })->name('order');
 Route::post('/addcustomer', 'CustomerController@index')->name('addcustomer');
 Route::post('/addorder', 'OrderController@index')->name('addorder');
+Route::get('/logout', 'LoginController@logout');
+
+Route::get('/loggingservice', 'TestLoggingController@index');
+
+Route::resource('usersrest', 'UsersRestController');
+Route::resource('usersrestguzzle', 'RestClientController');
